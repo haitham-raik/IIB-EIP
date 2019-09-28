@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://mc.eip.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:conv="http://mc.eip.com">
+    <xsd:complexType name="ConvertCToFType">
+    	<xsd:sequence>
+    		<xsd:element name="TemperatureInC" type="xsd:double" minOccurs="1" maxOccurs="1"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="ConvertCToF" type="conv:ConvertCToFType"></xsd:element>
+
+    <xsd:complexType name="ConvertCToFResponseType">
+    	<xsd:sequence>
+    		<xsd:element name="TemperatureInF" type="xsd:double"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="ConvertCToFResponse" type="conv:ConvertCToFResponseType"></xsd:element>
+</xsd:schema>
