@@ -1,0 +1,22 @@
+
+
+Importing file: E:\Projects\MyProjects\IIB-EIP\IIB-EIP\CommandMessagePattern\TemperatureConvertor.wsdl
+
+The WSDL import will proceed with bindings TemperatureConvertorSOAP.
+Creating wsdl schema document for file:///E:/Projects/MyProjects/IIB-EIP/IIB-EIP/CommandMessagePattern/TemperatureConvertor.wsdl.
+Parsing wsdl binding {http://mc.eip.com}TemperatureConvertorSOAP.
+Parsing wsdl binding input ConvertCToF.
+Parsing wsdl binding output ConvertCToF.
+Processing doc style for operation ConvertCToF.
+Populating WSDL schema com/eip/mc/TemperatureConvertor.xsd.
+Creating file com/eip/mc/TemperatureConvertor.xsd in the workspace.
+Creating file /CommandMessagePattern/com/eip/mc/com/eip/mc/TemperatureConvertor.xsd in the workspace.
+Copying source WSDL TemperatureConvertor.wsdl to TemperatureConvertor.wsdl.
+
+Elapsed time processing this message definition file: 0.394 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+

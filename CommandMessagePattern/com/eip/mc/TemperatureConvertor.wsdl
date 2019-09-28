@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="TemperatureConvertor" targetNamespace="http://mc.eip.com" xmlns:conv="http://mc.eip.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="TemperatureConvertorSOAP" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+  	<xsd:schema>
+<xsd:import namespace="http://mc.eip.com" schemaLocation="com/eip/mc/TemperatureConvertor.xsd"/>
+</xsd:schema>
+  </wsdl:types>					
+  
+  <wsdl:message name="ConvertCToFRequest">
+    <wsdl:part element="conv:ConvertCToF" name="InParam"/>
+  </wsdl:message>
+  <wsdl:message name="ConvertCToFResponse">
+    <wsdl:part element="conv:ConvertCToFResponse" name="OutParam"/>
+  </wsdl:message>
+  <wsdl:portType name="TemperatureConvertor">
+    <wsdl:operation name="ConvertCToF">
+      <wsdl:input message="conv:ConvertCToFRequest"/>
+      <wsdl:output message="conv:ConvertCToFResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TemperatureConvertorSOAP" type="conv:TemperatureConvertor">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ConvertCToF">
+      <soap:operation soapAction="http://mc.eip.com/TemperatureConvertor/ConvertCToF"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TemperatureConvertor">
+    <wsdl:port binding="conv:TemperatureConvertorSOAP" name="TemperatureConvertorSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
