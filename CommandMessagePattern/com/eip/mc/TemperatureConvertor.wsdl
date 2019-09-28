@@ -6,10 +6,11 @@
       </MRWSDLAppInfo>
     </wsdl:appinfo>
   </wsdl:documentation>
+  
   <wsdl:types>
   	<xsd:schema>
-<xsd:import namespace="http://mc.eip.com" schemaLocation="TemperatureConvertor.xsd"/>
-</xsd:schema>
+		<xsd:import namespace="http://mc.eip.com" schemaLocation="TemperatureConvertor.xsd"/>
+	</xsd:schema>
   </wsdl:types>					
   
   <wsdl:message name="ConvertCToFRequest">
