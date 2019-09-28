@@ -8,7 +8,7 @@
   </wsdl:documentation>
   <wsdl:types>
   	<xsd:schema>
-<xsd:import namespace="http://mc.eip.com" schemaLocation="com/eip/mc/TemperatureConvertor.xsd"/>
+<xsd:import namespace="http://mc.eip.com" schemaLocation="TemperatureConvertor.xsd"/>
 </xsd:schema>
   </wsdl:types>					
   
